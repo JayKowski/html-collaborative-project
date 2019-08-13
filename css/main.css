@@ -3,6 +3,40 @@ body{
   margin: 0;
   padding: 0;
 }
+.menu-icon img{
+  padding-right: 0px;
+  margin-top: 15px;
+  margin-left: 8px;
+}
+div{
+  padding: 3px;
+}
+div input{
+  margin-top: 12px;
+}
+.search input{
+  float: right;
+  width: 800px;
+  height: 20px;
+  margin-left: 60px;
+}
+.upload img{
+  float: right;
+  padding-top: 3px;
+  margin-left: 15px;
+}
+
+.button{
+  height: 40px;
+  width: 80px;
+  margin-top: 5px;
+  margin-left: 20px;
+  background-color: #4169e1;
+  color: white;
+  border: none;
+  font-size: 12px;
+}
+
 .nav-bar{
   display: flex;
   flex-direction: row;
@@ -10,6 +44,6 @@ body{
   padding: 0;
   margin:0;
 }
-/* div{
+div{
   display: inline-block;
-} */
+}
