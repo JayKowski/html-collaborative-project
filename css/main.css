@@ -6,6 +6,7 @@ body{
 .menu-icon img{
   padding-right: 0px;
   margin-left: 8px;
+  cursor: pointer;
 }
 /* div{
   padding: 3px;
@@ -32,7 +33,7 @@ body{
   top:0;
   background-color: #ccc;
   padding: 5px 15px;
-  /* border: 1px solid #333; */
+  cursor: pointer;
 }
 .upload img{
   float: right;
@@ -62,6 +63,8 @@ body{
   box-shadow: 2px 2px 2px #aaa;
   width:100%;
   position: fixed;
+  z-index: 1;
+  background-color: #fff;
 }
 div{
   display: inline-block;
@@ -72,20 +75,45 @@ div{
   margin-left: 50px;
   background-color: #ccc;
   border-radius: 50%;
+  cursor: pointer;
 }
 .nav-button{
   display: flex;
   align-items: center;
 }
 .nav-button i{
-  padding-left: 30px;
+  margin-left: 30px;
   font-size: 1.3rem;
+  color: #000;
 }
-.main-content{
+.container{
+  width: 100%;
   position: relative;
   top:70px;
+  display: flex;
+  flex-direction: row;
+  /* column-count: 2; */
+  /* column-gap: 40px; */
 
 }
-.main{
-  text-align: center;
+.main-content{
+  /* float: left; */
+  width: 70%;
+}
+
+.iframe{
+
+}
+.side-content{
+  width: 30%;
+  /* float: right; */
+}
+.channel-info{
+
+}
+.channel_info img{
+  float: left;
+}
+.subscribe{
+  background-color: #ff0000
 }
