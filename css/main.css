@@ -92,6 +92,7 @@ div{
   top:70px;
   display: flex;
   flex-direction: row;
+  margin:10px;
   /* column-count: 2; */
   /* column-gap: 40px; */
 
@@ -101,12 +102,13 @@ div{
   width: 70%;
 }
 
-.iframe{
-
+.iframe-content{
+  width: 100%;
+  text-align: center;
 }
+
 .side-content{
   width: 30%;
-  /* float: right; */
 }
 .channel-info{
 
