@@ -5,20 +5,34 @@ body{
 }
 .menu-icon img{
   padding-right: 0px;
-  margin-top: 15px;
   margin-left: 8px;
 }
-div{
+/* div{
   padding: 3px;
-}
-div input{
+} */
+/* div input{
   margin-top: 12px;
+} */
+.wrapper{
+  width:100%;
 }
 .search input{
   float: right;
   width: 800px;
   height: 20px;
   margin-left: 60px;
+}
+
+.search{
+  position: relative;
+}
+.search-icon{
+  position: absolute;
+  right:0;
+  top:0;
+  background-color: #ccc;
+  padding: 5px 15px;
+  /* border: 1px solid #333; */
 }
 .upload img{
   float: right;
@@ -41,9 +55,37 @@ div input{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   padding: 0;
-  margin:0;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 2px 2px 2px #aaa;
+  width:100%;
+  position: fixed;
 }
 div{
   display: inline-block;
+}
+.avatar{
+  height: 40px;
+  width: 40px;
+  margin-left: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.nav-button{
+  display: flex;
+  align-items: center;
+}
+.nav-button i{
+  padding-left: 30px;
+  font-size: 1.3rem;
+}
+.main-content{
+  position: relative;
+  top:70px;
+
+}
+.main{
+  text-align: center;
 }
