@@ -173,6 +173,12 @@ table {
   position: relative;
 
 }
+.iframe-content iframe{
+	width: 100%;
+	height: 450px;
+	border: 0px;
+}
+
 
 .channel-info{
   display: flex;
