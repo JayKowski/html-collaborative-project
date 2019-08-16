@@ -20,7 +20,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -30,7 +30,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans',serif;
-	line-height: 1;
+	overflow-y: scroll;
+	overflow-x: hidden
 }
 ol, ul {
 	list-style: none;
@@ -63,18 +64,20 @@ table {
 }
 
 
-
 /* Navbar Content */
-
+.nav-logo{
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .menu-icon img{
   padding-right: 0px;
   margin-left: 8px;
   cursor: pointer;
 }
 
-
 .search input{
-  width: 800px;
+  width: 700px;
   height: 20px;
   margin-left: 60px;
 	padding-left: 5px
@@ -152,10 +155,11 @@ table {
   top:70px;
   display: flex;
   flex-direction: row;
-  margin:10px;
+  margin: 20px 40px;
 }
+
 .main-content{
-  width: 80%;
+  width: 70%;
 }
 
 
@@ -167,69 +171,89 @@ table {
 
 .iframe-content{
   position: relative;
-  left: 10%;
-  width: 70%;
+
 }
 
 .channel-info{
-text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #ddd;
 }
-.channel_info img{
-  float: left;
-  display: inline-block;
+.channel-info img{
+  background-color: #ddd;
 }
-.channel-info a{
-  display: inline-block;
-  text-decoration: none;
-  color: #000;
+
+.channel-text{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+}
+
+.channel-text a{
+  font-size: 0.8rem;
+  font-weight: 600;
+	padding-bottom: 5px;
+}
+
+.channel-info .views{
+  position: absolute;
+  right:0;
+	font-weight: 600;
+}
+
+.subscribe-button{
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  border: 1px solid #ddd;
 }
 .subscribe{
+	padding: 0 5px;
   background-color: #ff0000;
-  color: white;
-  text-align: center;
-  float: right;
-  border: 1px solid #ccc;
-  padding-left: 3px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  border-radius: 2px;
+  color: #fff;
 }
-.subscribe .subscribers{
+.subscribe-num{
   background-color: #fff;
-  color: #000;
-  padding-left: 3px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+
 }
+
 .video-info{
   text-align: left;
   position: relative;
   left: 0%;
   background-color: white;
-  padding: 8px;
+  padding: 15px;
 }
 
 .video-info p{
   line-height: 20px;
 }
-.about-video h5{
-  width: 100%;
+.about-video .show{
   text-align: center;
   margin: 2px 0px;
-  cursor: pointer;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 .about-video h6{
-  margin: 0px;
+  font-weight: 700;
 }
 .video-interact{
   width: 100%;
-  text-align: center;
+}
+.video-addons{
+	margin: 15px;
+	font-size:0.8rem;
 }
 .video-interact span{
   cursor: pointer;
 }
+.about-video-text{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
 .add-share-more{
-  float: left;
   padding: 0px 10px;
   margin-bottom: 8px;
 }
@@ -243,17 +267,18 @@ text-align: center;
 
 .side-content{
   width: 30%;
-	margin-left: -100px;
+	margin: 0 40px;
 }
 
 .aside-heading{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .aside-heading span{
   font-weight: 700
 }
+
 .aside-main{
   margin: 30px 0;
 }
@@ -289,7 +314,9 @@ text-align: center;
 .thumbnail-text span{
   font-size: 0.7rem;
 }
-
+.autoplay .toggle{
+	font-size: 1.2rem;
+}
 
 /* Footer */
 
@@ -313,4 +340,80 @@ text-align: center;
 }
 .footer-content > *{
   display: block;
+}
+
+.copyright-text ul,
+.terms-text ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.copyright-text li,
+.terms-text li {
+  float: left;
+  padding:5px 10px;
+}
+
+.copyright-text li a,
+.terms-text li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width:901px) and (max-width:1060px) {
+	.search input{
+		width: 450px;
+		margin-left: 10px;
+	}
+
+}
+
+@media (max-width:900px) {
+
+	/* NAVBAR */
+	.nav-bar{
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-around;
+	}
+
+	.search input{
+		width: 400px;
+		margin-left: 10px;
+	}
+	.nav-button .fas{
+		display: none;
+	}
+
+
+	/* MAIN CONTENT */
+	.container{
+	  display: flex;
+	  flex-direction: column;
+	}
+	.main-content{
+		width:90%;
+	}
+
+
+	/* SIDE CONTENT */
+	.side-content{
+		margin: 40px 0;
+		width: 90%;
+	}
+
+}
+
+@media (max-width:610px) {
+	.search input{
+		width: 230px;
+		margin-left: 10px;
+	}
+.container{
+	width: 95%;
+}
 }

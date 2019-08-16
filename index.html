@@ -11,15 +11,18 @@
   <body>
       <div class="wrapper">
         <div class="nav-bar">
-          <div class="menu-icon">
-              <img src="images/menu_icon.png" height="20px" width="20px" >
-          </div>
-          <div class = "logo">
-            <a href="#"><img src="images/youtube.png"  width="100" height="50" style="padding: 0px"></a>
-          </div>
+          <div class="nav-logo">
+            <div class="menu-icon">
+                <img src="images/menu_icon.png" height="20px" width="20px" >
+            </div>
+            <div class="logo">
+              <a href="#"><img src="images/youtube.png"  width="100" height="50" style="padding: 0px"></a>
+            </div>
+
           <div class="search">
             <i class="fas fa-search search-icon"></i>
             <input type="text" name="" value="" placeholder="Search">
+          </div>
           </div>
           <div class="nav-button">
             <a href="#"><i class="fas fa-th"></i></a>
@@ -33,58 +36,70 @@
         <div class="container">
           <div class="main-content">
             <div class="iframe-content">
-              <iframe width="700" height="450" src="https://www.youtube.com/embed/pQN-pnXPaVg" frameborder="0" allowfullscreen></iframe>
+              <iframe width="100%" height="450" src="https://www.youtube.com/embed/pQN-pnXPaVg" frameborder="0" allowfullscreen></iframe>
               <div class="video-info">
                 <h2>HTML Full Course - Build a Website Tutorial</h2>
                 <div class="channel-info">
-                  <img src="images/channel_logo.png" width="80px" height="80px" align="center">
-                  <a href="#">Programming for dummies</a>
-                  <span class="subscribe">
-                    <i class="fab fa-youtube"></i>
-                    subscribe
-                    <span class="subscribers">800</span>
-                  </span>
-
-               </div><hr>
-                <div class="video-interact">
-                  <span class="add-share-more">
-                    <span ><i class="fas fa-plus"></i> </span>
-                    <span> Add to</span>
-                  </span>
-                  <span class="add-share-more">
-                    <span ><i class="fas fa-share"></i></span>
-                    <span>Share</span>
-                  </span>
-                  <span class="add-share-more">
-                    <span ><i class="fas fa-ellipsis-h"></i></span>
-                    <span>More</span>
-                  </span>
-                  <span class="add-share-more opinion">
-                    <span ><i class="fas fa-thumbs-up"></i></span>
-                    <span>Like</span>
-                  </span>
-                  <span class="add-share-more opinion">
-                    <span ><i class="fas fa-thumbs-down"></i></span>
-                    <span>Dislike</span>
-                  </span>
+                  <img src="images/channel_logo.png" width="80px" height="80px">
+                  <div class="channel-text">
+                    <a href="#">The Odin Project</a>
+                    <div class="subscribe-button">
+                      <span class="subscribe">
+                        <i class="fab fa-youtube"></i>
+                      subscribe</span>
+                      <span class="subscribe-num">800</span>
+                    </div>
+                  </div>
+                  <div class="views">
+                    <h4>34,456 views</h4>
+                  </div>
                 </div>
-                <div class="about-video">
-                  <h6>Published on June 19th, 2019</h6>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque sodales ut. Nunc consequat interdum varius sit amet mattis vulputate enim. In mollis nunc sed id. Quisque id diam vel quam elementum pulvinar etiam non quam. Arcu dictum varius duis at consectetur lorem donec massa. Morbi non arcu risus quis varius quam. Tristique senectus et netus et malesuada. Tempus urna et pharetra pharetra massa massa. Vel pretium lectus quam id leo in vitae. Mattis molestie a iaculis at erat. Malesuada proin libero nunc consequat interdum varius.</p><hr>
-                  <h5>SHOW MORE</h5>
-               </div>
-              </div>
-           </div>
 
+                <div class="video-interact">
+                  <div class="video-addons">
+                    <span class="add-share-more">
+                      <i class="fas fa-plus"></i>
+                      Add to
+                    </span>
+                    <span class="add-share-more">
+                      <i class="fas fa-share"></i>
+                      Share
+                    </span>
+                    <span class="add-share-more">
+                      <i class="fas fa-ellipsis-h"></i>
+                      More
+                    </span>
+                    <span class="add-share-more opinion">
+                    <i class="fas fa-thumbs-up"></i>
+                      Like
+                    </span>
+                    <span class="add-share-more opinion">
+                      <i class="fas fa-thumbs-down"></i>
+                      Dislike
+                    </span>
+                  </div>
+
+                  <div class="about-video">
+                    <div class="about-video-text">
+                      <h6>Published on June 19th, 2019</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque sodales ut. Nunc consequat interdum varius sit amet mattis vulputate enim. In mollis nunc sed id. Quisque id diam vel quam elementum pulvinar etiam non quam. Arcu dictum varius duis at consectetur lorem donec massa. Morbi non arcu risus quis varius quam. Tristique senectus et netus et malesuada. Tempus urna et pharetra pharetra massa massa. Vel pretium lectus quam id leo in vitae. Mattis molestie a iaculis at erat. Malesuada proin libero nunc consequat interdum varius.</p>
+                    </div>
+                    <div class="show">
+                      <a href="#">show more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
           <div class="side-content">
            <div class="aside-heading">
              <div class="up-next">
-               <span>Up next</span>
+               <div>Up next</div>
              </div>
              <div class="autoplay">
-               <span>AUTOPLAY</span>
+               <div>AUTOPLAY <i class="fas fa-toggle-on toggle"></i></div>
              </div>
            </div>
            <div class="aside-main">
