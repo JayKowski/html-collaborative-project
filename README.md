@@ -1,9 +1,6 @@
 # html-collaborative-project
-first Microverse html collaborative project
-Assignment link : https://github.com/JayKowski/html-collaborative-project.git
+This is a collaborative Microverse project built by <a href="https://github.com/adaorachi
+">MaryAnn Chukwuka </a> and <a href="https://github.com/JayKowski">Judah Maina</a>
 
-Project specification:
-To create a youtube clone page similar in design to the source page in, http://archive.today/Bss88
-hence the following webpage was created: https://github.com/JayKowski/html-collaborative-project.git
-
-project screenshots:
+it is a clone built after a youtube source page from <a href="http://archive.today/Bss88">this source</a>
+and <a href="https://github.com/JayKowski/html-collaborative-project.git">this is the repo link </a>
